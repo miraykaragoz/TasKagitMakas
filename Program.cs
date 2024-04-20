@@ -6,48 +6,48 @@ namespace TasKagitMakas
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Taş Kağıt Makas Oyununa Hoş Geldiniz.");
-            Console.WriteLine("v1 - Skorsuz oyun");
-            Console.WriteLine("v1 - Skorlu oyun");
-            string secimv1 = Console.ReadLine();
+            //Console.WriteLine("Taş Kağıt Makas Oyununa Hoş Geldiniz.");
+            //Console.WriteLine("v1 - Skorsuz oyun");
+            //Console.WriteLine("v1 - Skorlu oyun");
+            //string secimv1 = Console.ReadLine();
 
-            if (secimv1 == "1")
-            {
-                Console.Clear();
+            //if (secimv1 == "1")
+            //{
+            //    Console.Clear();
 
-                Console.WriteLine("Aşağıdaki opsiyonlardan birini seçiniz: ");
+            //    Console.WriteLine("Aşağıdaki opsiyonlardan birini seçiniz: ");
 
-                string[] opsiyonlar = ["Taş", "Kağıt", "Makas"];
-                Random random = new Random();
-                int bilgisayarSecimi = random.Next(0, opsiyonlar.Length);
+            //    string[] opsiyonlar = ["Taş", "Kağıt", "Makas"];
+            //    Random random = new Random();
+            //    int bilgisayarSecimi = random.Next(0, opsiyonlar.Length);
 
-                for (int i = 0; i < opsiyonlar.Length; i++)
-                {
-                    Console.WriteLine((i + 1) + ". " + opsiyonlar[i]);
-                }
+            //    for (int i = 0; i < opsiyonlar.Length; i++)
+            //    {
+            //        Console.WriteLine((i + 1) + ". " + opsiyonlar[i]);
+            //    }
 
-                int oyuncuSecimi = int.Parse(Console.ReadLine()) - 1;
+            //    int oyuncuSecimi = int.Parse(Console.ReadLine()) - 1;
 
-                string sonuc;
+            //    string sonuc;
 
-                if (oyuncuSecimi == bilgisayarSecimi)
-                {
-                    sonuc = "Berabere";
+            //    if (oyuncuSecimi == bilgisayarSecimi)
+            //    {
+            //        sonuc = "Berabere";
 
-                }
-                else if ((oyuncuSecimi == 0 && bilgisayarSecimi == 2) || (oyuncuSecimi == 1 && bilgisayarSecimi == 0) || (oyuncuSecimi == 2 && bilgisayarSecimi == 1))
-                {
-                    sonuc = "Kazandın!";
-                }
-                else
-                {
-                    sonuc = "Kaybettin!";
-                }
+            //    }
+            //    else if ((oyuncuSecimi == 0 && bilgisayarSecimi == 2) || (oyuncuSecimi == 1 && bilgisayarSecimi == 0) || (oyuncuSecimi == 2 && bilgisayarSecimi == 1))
+            //    {
+            //        sonuc = "Kazandın!";
+            //    }
+            //    else
+            //    {
+            //        sonuc = "Kaybettin!";
+            //    }
 
-                Console.WriteLine("Oyuncu seçimi: " + opsiyonlar[oyuncuSecimi]);
-                Console.WriteLine("Bilgisayar seçimi: " + opsiyonlar[bilgisayarSecimi]);
-                Console.WriteLine("Sonuç: " + sonuc);
-            }
+            //    Console.WriteLine("Oyuncu seçimi: " + opsiyonlar[oyuncuSecimi]);
+            //    Console.WriteLine("Bilgisayar seçimi: " + opsiyonlar[bilgisayarSecimi]);
+            //    Console.WriteLine("Sonuç: " + sonuc);
+            //}
 
             //if (secimv1 == "2")
             //{
